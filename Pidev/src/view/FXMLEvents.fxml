@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-radius: 30 30 30 30;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Omar.ServiceOm.FXMLEventsController">
+   <children>
+      <AnchorPane prefHeight="616.0" prefWidth="993.0" style="-fx-background-color: #2D75E8; -fx-background-radius: 20 20 20 20;" stylesheets="@../css/fullpackstyling.css">
+         <children>
+            <Pane layoutX="590.0" layoutY="-1.0" prefHeight="93.0" prefWidth="405.0" style="-fx-background-radius: 20 20 0 0;" styleClass="linear-grad" stylesheets="@../css/fullpackstyling.css">
+               <children>
+                  <Label layoutX="104.0" layoutY="21.0" text="AeroSpace" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="74.0" layoutX="221.0" layoutY="2.0" smooth="false">
+                     <image>
+                        <Image url="@../../../../../../../AppData/Local/Temp/icons8_airplane_80px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="quitbtn" layoutX="368.0" layoutY="9.0" mnemonicParsing="false" onAction="#btnquit" text="X" />
+               </children>
+            </Pane>
+            <VBox prefHeight="544.0" prefWidth="74.0" styleClass="linear-grad" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="79.0" prefWidth="74.0" style="-fx-background-radius: 30 30 30 30;">
+                     <effect>
+                        <Glow />
+                     </effect></Pane>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" style="-fx-background-radius: 10 10 10 10;" stylesheets="@../css/fullpackstyling.css" text="Profile" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../AppData/Local/Temp/icons8_shopping_basket_24px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" style="-fx-background-radius: 10 10 10 10;" stylesheets="@../css/fullpackstyling.css" text="Activity" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../AppData/Local/Temp/icons8_airplane_mode_on_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button contentDisplay="TOP" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" style="-fx-background-radius: 10 10 10 10;" stylesheets="@../css/fullpackstyling.css" text="Mentors" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../AppData/Local/Temp/icons8_hotel_star_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button contentDisplay="TOP" layoutX="10.0" layoutY="284.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" style="-fx-background-radius: 10 10 10 10;" stylesheets="@../css/fullpackstyling.css" text="Mentors" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../AppData/Local/Temp/icons8_accounting_64px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="91.0" layoutY="69.0" prefHeight="531.0" prefWidth="886.0" style="-fx-background-color: #131022; -fx-background-radius: 20 20 20 20;" stylesheets="@../css/fullpackstyling.css">
+               <children>
+                  <TabPane prefHeight="539.0" prefWidth="886.0" style="-fx-background-color: #030307; -fx-background-radius: 20 20 20 20;" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Omar.entityOm.Events">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="894.0" style="-fx-background-color: #E2EDED;" stylesheets="@../css/fullpackstyling.css">
+                                 <children>
+                                    <TextField fx:id="textname" layoutX="99.0" layoutY="134.0" prefHeight="26.0" prefWidth="75.0" />
+                                    <TextField fx:id="textperiod" layoutX="99.0" layoutY="181.0" prefHeight="26.0" prefWidth="75.0" />
+                                    <TextField fx:id="textavailable" layoutX="100.0" layoutY="331.0" prefHeight="26.0" prefWidth="75.0" />
+                                    <Label layoutX="25.0" layoutY="137.0" text="Name" textFill="#050000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="22.0" layoutY="184.0" text="Period" textFill="#230101">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="16.0" layoutY="334.0" text="Available" textFill="#1e0101">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="25.0" layoutY="283.0" text="Date " textFill="#150101">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="fielddate" layoutX="100.0" layoutY="280.0" prefHeight="26.0" prefWidth="75.0" />
+                                    <Button fx:id="insertButton" layoutX="25.0" layoutY="429.0" mnemonicParsing="false" onAction="#insertButton" prefHeight="34.0" prefWidth="94.0" styleClass="button4" stylesheets="@../css/fullpackstyling.css" text=" Add Omar.entityOm.Events" />
+                                    <Label fx:id="connlabel" layoutX="364.0" layoutY="470.0" prefHeight="27.0" prefWidth="494.0" textFill="#c4371b" />
+                                    <TableView fx:id="TableView" layoutX="208.0" layoutY="84.0" onMouseClicked="#handleMouseClick" prefHeight="318.0" prefWidth="633.0">
+                                      <columns>
+                                        <TableColumn fx:id="idColumn" prefWidth="76.0" text="ID" />
+                                        <TableColumn fx:id="nameColumn" text="Name" />
+                                        <TableColumn fx:id="periodColumn" prefWidth="102.0" text="Period" />
+                                         <TableColumn fx:id="locationColumn" editable="false" prefWidth="81.0" text="Location" />
+                                         <TableColumn fx:id="dateColumn" prefWidth="128.0" text="Date" />
+                                          <TableColumn fx:id="availableColumn" editable="false" prefWidth="81.0" text="Available" />
+                                          <TableColumn fx:id="priceColumn" editable="false" prefWidth="81.0" text="Price" />
+                                         
+                                      </columns>
+                                    </TableView>
+                                    <Button fx:id="updateButton" layoutX="127.0" layoutY="429.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="34.0" prefWidth="94.0" styleClass="button4" stylesheets="@../css/fullpackstyling.css" text="Edit Omar.entityOm.Events" />
+                                    <Button fx:id="deleteButton" layoutX="231.0" layoutY="429.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="34.0" prefWidth="94.0" styleClass="button4" stylesheets="@../css/fullpackstyling.css" text="Supp Omar.entityOm.Events" />
+                                    <TextField fx:id="filterfield" layoutX="156.0" layoutY="30.0" />
+                                    <Label layoutX="36.0" layoutY="30.0" text="Recherche" textFill="#180101">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                     <Text fx:id="Location" fill="#180101" fontSmoothingType="LCD" layoutX="640.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chart-plot-background" wrappingWidth="201.99999475479126">
+                                         <font>
+                                             <Font name="System Bold Italic" size="13.0" />
+                                         </font>
+                                    </Text>
+                                    <Label layoutX="14.0" layoutY="233.0" text="Location " textFill="#050000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textlocation" layoutX="99.0" layoutY="230.0" prefHeight="26.0" prefWidth="75.0" />
+                                    <Label layoutX="30.0" layoutY="98.0" text="Id" textFill="#050000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textid" layoutX="99.0" layoutY="95.0" prefHeight="26.0" prefWidth="74.0" />
+                                    <Label layoutX="16.0" layoutY="375.0" text="Price" textFill="#1e0101">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textprice" layoutX="98.0" layoutY="372.0" prefHeight="26.0" prefWidth="75.0" />
+                                    <Button layoutX="614.0" layoutY="416.0" mnemonicParsing="false" onAction="#btnrun" prefHeight="26.0" prefWidth="159.0" text="SMS" />
+                                    <Button layoutX="614.0" layoutY="456.0" mnemonicParsing="false" onAction="#btnweather" prefHeight="26.0" prefWidth="158.0" text="Weather" />
+                                    <Button fx:id="tri" layoutX="723.0" layoutY="29.0" mnemonicParsing="false" onAction="#btntrier" prefHeight="26.0" prefWidth="75.0" text="Trier" />
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="134.0" layoutY="17.0" text="Dev'App" textFill="#130101">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

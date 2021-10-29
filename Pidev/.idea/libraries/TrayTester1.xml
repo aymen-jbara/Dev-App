@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TrayTester1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../lib/libr/TrayTester.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

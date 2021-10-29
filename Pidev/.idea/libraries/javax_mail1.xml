@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.mail1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/SendEmailJFX-main/Desktop/Github/Libraries/javax.mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
