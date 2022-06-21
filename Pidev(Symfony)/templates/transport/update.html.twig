@@ -1,0 +1,12 @@
+{% extends 'base2.html.twig' %}
+{% block body %}
+    <div style="margin: auto;width: 65%;
+            border: 3px Solid  pink;
+            padding: 5px;">
+
+        {{ form_start(form, {attr: {'novalidate': 'novalidate'}}) }}
+        {{ form_end(form) }}
+
+    </div>
+
+{% endblock %}

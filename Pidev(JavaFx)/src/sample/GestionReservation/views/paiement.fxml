@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="514.0" style="-fx-background-color: black; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GestionReservation.Controller.ConfirmationReservation">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #2CAEEC; -fx-background-radius: 40;">
+         <children>
+            <HBox prefHeight="56.0" prefWidth="250.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" wrappingWidth="126.13672065734863">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <fill>
+                        <LinearGradient endX="0.8015267612369916" endY="1.0" startX="0.2786259614784299" startY="0.3511450672877654">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Text fx:id="User" strokeType="OUTSIDE" strokeWidth="0.0" text="AeroSpace" wrappingWidth="101.3367862701416">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <fill>
+                        <LinearGradient endX="0.5038167938931297" endY="0.6984732833527427" startX="0.39312969637281103" startY="0.5916031262346806">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8868421316146851" green="0.8556383848190308" blue="0.8556383848190308" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.007633587786259542">
+                                 <color>
+                                    <Color red="0.031611841171979904" green="0.012236841954290867" blue="0.24473683536052704" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.14848683774471283" green="0.11089181154966354" blue="0.4868420958518982" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="78.0" prefWidth="122.0" text="Nom Offres :" textFill="#0e0e0e">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="67.0" prefWidth="132.0">
+                     <children>
+                        <Label fx:id="idoffres" prefHeight="70.0" prefWidth="114.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></VBox>
+               </children></HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="71.0" prefWidth="157.0" text="Compagnie Aérienne :">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Label>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="idVol" prefHeight="71.0" prefWidth="89.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children></VBox>
+               </children></HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="72.0" prefWidth="98.0" text="Nom Hotels :">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <VBox prefHeight="72.0" prefWidth="133.0">
+                     <children>
+                        <Label fx:id="idHotel" prefHeight="75.0" prefWidth="127.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children></VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="72.0" prefWidth="114.0" text="Nom Events :">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font></Label>
+                  <VBox prefHeight="72.0" prefWidth="119.0">
+                     <children>
+                        <Label fx:id="idEvent" prefHeight="81.0" prefWidth="112.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children></VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="72.0" prefWidth="142.0" text="Types de Transport :">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="idTrans" prefHeight="98.0" prefWidth="116.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children></VBox>
+               </children></HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="247.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" />
+      <Button fx:id="payment" layoutX="402.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnConfirmation" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: #40EA2E; -fx-background-radius: 30;" text="Confirmer" textFill="#10100c">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="archive" layoutX="275.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnbachReservation" prefHeight="38.0" prefWidth="72.0" style="-fx-background-color: #2CAEEC; -fx-background-radius: 30;" text="Back" textFill="#151814">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="N_carte" layoutX="269.0" layoutY="112.0" prefHeight="48.0" prefWidth="228.0" promptText="N° CIN" style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>
